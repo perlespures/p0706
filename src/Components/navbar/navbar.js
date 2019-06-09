@@ -8,11 +8,11 @@ const NavBar = () => {
 
     return (
         <div>
-            <Navbar bg="#f7f7f7" expand="lg">
+            <Navbar  bg="#f7f7f7" expand="lg">
                 <Navbar.Brand href="#home">Generic</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
+                <Navbar.Collapse id="basic-navbar-nav" >
+                    <Nav className="mr-auto" >
                     { 
                         tab.map ((element) => 
                         (
@@ -25,9 +25,14 @@ const NavBar = () => {
                     }
                       
                     </Nav>
-                    <Form inline>
+                    <Form inline style = {{marginRight: "300px"}}>
                         <FormControl type="text" placeholder="Rechercher" className="mr-sm-2" />
                         <Button  style={{backgroundColor:'#FB3B49',border:'white'}}>Rechercher</Button>
+                    </Form>
+                    <Form inline >
+                        <Button style= {{backgroundColor: "#FB3B49", border:'white', marginRight: "10px"}}>Register</Button>
+                        <Button style= {{backgroundColor: "#FB3B49", border:'white'}} >Login</Button>
+                        
                     </Form>
                 </Navbar.Collapse>
             </Navbar>
